@@ -1,0 +1,5 @@
+git init =>For initialising the working directory to git
+git status=>keeps track of unstaged files
+git add . =>adds all unstaged file into staging area
+git commit -m "message"=> commits all the staged files into the local repository
+git log => for tracking recent commits
