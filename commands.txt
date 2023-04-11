@@ -35,4 +35,7 @@ such as GitHub or Bitbucket. Remote repositories are typically used for collabor
 In the context of the command git push -u origin master, the -u flag is used to set the upstream branch for the master branch 
 to the origin remote repository. This means that future git push or git pull commands executed from the master branch will use the
  origin repository and master branch by default, unless explicitly specified otherwise.
- Update
+
+ The .git folder is a hidden directory that is created by Git when you initialize a repository using the git init command. This folder contains all the information that Git needs to manage the repository, 
+ including the version history of the files, the current state of the working directory, and the configuration settings for
+  the repository.
