@@ -3,3 +3,5 @@ git status=>keeps track of unstaged files
 git add . =>adds all unstaged file into staging area
 git commit -m "message"=> commits all the staged files into the local repository
 git log => for tracking recent commits
+git diff filename=> for finding the changes made in the last commit file to current file.
+git checkout filename=>for reverting backto the last commit.
