@@ -1,7 +1,38 @@
-git init =>For initialising the working directory to git
+git init =>For initialising the working directory to git repsository where we can track files
 git status=>keeps track of unstaged files
 git add . =>adds all unstaged file into staging area
 git commit -m "message"=> commits all the staged files into the local repository
 git log => for tracking recent commits
 git diff filename=> for finding the changes made in the last commit file to current file.
 git checkout filename=>for reverting backto the last commit.
+git remote add origin url (inorder to add current local repository to remote repository we use this command)
+here origin is the name of the remote repository .This will set the remote repository at the specified link.
+git push -u origin master (this command will be used to push all the files from local repository to remote repository)
+-u is flag for sending the files from local repository to remote repository and master is the branch in which we are pushing
+the files.
+In Git, a repository is a central location where all the files and folders of a project are stored and managed. 
+A Git repository contains all the versions of a project's source code, as well as metadata about those versions
+ such as commit messages, author information, and timestamps.
+ The purpose of the staging area is to give you more control over what changes are included in each commit. By adding changes to the staging area before committing them, you can review and organize your changes more easily. 
+ You can make multiple commits with smaller changes, rather than committing all changes at once, which can make it easier to review,
+  understand and collaborate on your code.
+
+Using the staging area also helps you avoid accidentally committing changes that you didn't intend to include in a particular commit.
+ It allows you to selectively choose which changes to include in a commit and exclude the ones that are not yet ready or not relevant 
+ for that specific commit.
+ A local repository is a copy of a Git repository that is stored on your local machine. When you clone a repository from a remote server, Git creates a 
+ local copy of that repository on your machine. You can make changes to the files in your local repository, track those changes using
+  Git, and create new commits containing those changes.
+
+A remote repository, on the other hand, is a copy of a Git repository that is stored on a remote server, 
+such as GitHub or Bitbucket. Remote repositories are typically used for collaboration, allowing multiple developers to work on the
+ same codebase. When you push changes to a remote repository, those changes are uploaded to the remote server and can be accessed
+ by other developers who have access to that repository.
+ The git remote add command is used to add a new remote repository to your local Git repository. The command takes two arguments: the name of the 
+ remote repository, and the URL of the remote repository.
+ In Git, the upstream branch refers to the remote branch that is associated with the current local branch. When you set an upstream branch for a local branch, Git knows which remote branch to push changes to and which remote branch to pull changes from.
+
+In the context of the command git push -u origin master, the -u flag is used to set the upstream branch for the master branch 
+to the origin remote repository. This means that future git push or git pull commands executed from the master branch will use the
+ origin repository and master branch by default, unless explicitly specified otherwise.
+ Update
